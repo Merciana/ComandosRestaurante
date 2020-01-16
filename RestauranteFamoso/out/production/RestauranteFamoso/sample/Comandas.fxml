@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerComanda">
+<children>
+    <TableView fx:id="tabelaViewcomanda" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="581.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" AnchorPane.topAnchor="16.0">
+        <columns>
+            <TableColumn fx:id="tabelaGarcom" prefWidth="168.0" text="Garçom" />
+            <TableColumn fx:id="tabelaPedido" prefWidth="203.0" text="Pedido" />
+            <TableColumn fx:id="tabelaValor" prefWidth="194.0" text="Valor" />
+        </columns>
+    </TableView>
+    <Button fx:id="butaoLibararMesa" layoutX="163.0" layoutY="342.0" mnemonicParsing="false" text="Liberar Mesa" />
+    <Button fx:id="butaoFinalizarPedido" layoutX="318.0" layoutY="342.0" mnemonicParsing="false" text="Finalizar Pedido" />
+    <Button fx:id="butaoAplicarDesconto" layoutX="478.0" layoutY="342.0" mnemonicParsing="false" text="Aplicar Desconto" />
+    <TextField fx:id="textFieldTotal" layoutX="435.0" layoutY="242.0" />
+    <TextField fx:id="textFieldDesconto" layoutX="435.0" layoutY="280.0" />
+    <Label layoutX="372.0" layoutY="240.0" text="Total">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </Label>
+    <Label layoutX="334.0" layoutY="278.0" text="Desconto">
+        <font>
+            <Font size="20.0" />
+        </font>
+    </Label>
+</children>
+</AnchorPane>
